@@ -99,3 +99,19 @@ section {
     border-radius: 5px;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically on smaller screens */
+        align-items: center; /* Center-align navigation items */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Adjust margin for smaller screens */
+    }
+
+    .gallery img {
+        width: 100%; /* Ensure images take full width on smaller screens */
+        max-height: 150px; /* Decrease maximum height for smaller screens */
+    }
+}
